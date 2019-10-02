@@ -1,0 +1,9 @@
+ext {
+    // TRUE 使用本地依赖
+    // FALSE 使用MAVEN 依赖
+    LOCAL_MAVEN = true
+
+    // 是否为快照模式
+    SNAPSHOT = false
+}
+

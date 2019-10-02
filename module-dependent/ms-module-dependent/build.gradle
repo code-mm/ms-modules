@@ -1,0 +1,55 @@
+apply from: "key.gradle"
+apply from: "blessedDeps.gradle"
+apply from: "config.gradle"
+
+buildscript {
+    ext.kotlin_version = '1.3.31'
+
+    repositories {
+
+        maven { url 'https://devops.16801.com/maven/repository/chujianTech-Snapshot/' }
+        maven { url 'https://devops.16801.com/maven/repository/chujiansdk/' }
+        maven { url 'https://devops.16801.com/maven/repository/chujian-sdk-snapshot/' }
+        maven { url 'http://devops.16801.com/maven/repository/chujianTech-Release/' }
+        maven { url 'https://devops.16801.com/maven/repository/chujianTech-Group/' }
+        google()
+        jcenter()
+        mavenCentral()
+
+
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://devops.16801.com/maven/repository/chujianTech-Snapshot/' }
+        maven { url 'https://devops.16801.com/maven/repository/chujiansdk/' }
+        maven { url 'https://devops.16801.com/maven/repository/chujian-sdk-snapshot/' }
+        maven { url 'http://devops.16801.com/maven/repository/chujianTech-Release/' }
+        maven { url 'https://devops.16801.com/maven/repository/chujianTech-Group/' }
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+

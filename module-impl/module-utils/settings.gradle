@@ -1,0 +1,2 @@
+include ':module-utils'
+rootProject.name='module-utils'

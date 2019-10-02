@@ -1,6 +1,8 @@
 package com.ms.module.supper.inter.utils;
 
-public interface IApkUtils {
+import com.ms.module.supper.inter.supper.ISupper;
+
+public interface IApkUtils  extends ISupper {
 
     String getAppName();
 

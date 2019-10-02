@@ -1,5 +1,7 @@
 package com.ms.module.supper.inter.utils;
 
-public interface IToastUtils   {
+import com.ms.module.supper.inter.supper.ISupper;
+
+public interface IToastUtils   extends ISupper {
     void show(String text);
 }

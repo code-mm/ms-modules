@@ -7,7 +7,6 @@ import java.util.List;
 // API 管理器
 public interface IAPI extends ISupper {
 
-
     void setBaseUrls(List<String> urls);
 
     List<String> getBaseUrls();

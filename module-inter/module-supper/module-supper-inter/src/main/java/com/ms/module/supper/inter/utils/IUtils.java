@@ -10,4 +10,6 @@ public interface IUtils extends ISupper {
 
     IToastUtils getToastUtils();
 
+    IEncryptionUtils getEncryptionUtils();
+
 }

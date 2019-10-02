@@ -1,0 +1,23 @@
+
+
+include ':module-appsflyer'
+include ':module-eventbus'
+include ':module-facebook'
+include ':module-glide'
+include ':module-google'
+include ':module-gson'
+include ':module-lifecycle'
+include ':module-lifecycle-annotationprocessor'
+include ':module-multidex'
+include ':module-okhttp'
+include ':module-okhttp-logging'
+include ':module-retrofit'
+include ':module-retrofit-adapter-rxjava'
+include ':module-retrofit-converter-gson'
+include ':module-room'
+include ':module-room-annotationprocessor'
+include ':module-rxandroid'
+include ':module-rxjava'
+include ':module-rxlifecycle'
+include ':module-sdk-event'
+

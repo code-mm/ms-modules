@@ -1,0 +1,18 @@
+// 签名文件路径
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+// 初始化 Properties
+def keystoreProperties = new Properties()
+// 加载签名文件到 keystoreProperties
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+// 签名信息
+project.ext {
+    // TODO: You must update the APP_ID and the KEYSTORE information.
+    KEYSTORE_STORE_FILE = rootProject.file(keystoreProperties['storeFile'])
+    KEYSTORE_STORE_PASSWORD = keystoreProperties['storePassword']
+    KEYSTORE_KEY_ALIAS = keystoreProperties['keyAlias']
+    KEYSTORE_KEY_PASSWORD = keystoreProperties['keyPassword']
+}
+
+
+

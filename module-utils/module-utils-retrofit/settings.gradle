@@ -1,0 +1,2 @@
+include  ':module-log'
+rootProject.name='module-log'
